@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="./dist/css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a class="darkmode-ignore" href="#">MixCode</a>
+        </div>
+    </header>
+
+
+    <main class="darkmode-ignore">
+        <div class="container">
+            <h1>Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere hic exercitationem rem.
+                Reprehenderit, corporis?</p>
+            <a href="#">Visit</a>
+        </div>
+    </main>
+
+    <section>
+        <div class="container">
+            <h2>Some Heading For Test</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facilis quibusdam perspiciatis quis rerum
+                reprehenderit, enim error eum asperiores minima corporis. Modi quas natus quidem eveniet ipsa labore
+                earum enim, officia optio exercitationem iusto, praesentium commodi illo explicabo ipsum ratione
+                necessitatibus! Reiciendis nam aliquid velit rem aut aspernatur nemo itaque quis, doloribus dolore quas
+                consectetur facere ratione repellendus illum reprehenderit. Ullam quae placeat aliquid cum ducimus
+                nesciunt necessitatibus fugit dolores, minus ratione, quibusdam eveniet enim ipsam quasi ab porro illo
+                voluptates quaerat dolor iure consequuntur a! Ratione voluptatum aperiam cum, consequuntur, eos quasi
+                excepturi explicabo porro aspernatur modi distinctio provident!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facilis quibusdam perspiciatis quis rerum
+                reprehenderit, enim error eum asperiores minima corporis. Modi quas natus quidem eveniet ipsa labore
+                earum enim, officia optio exercitationem iusto, praesentium commodi illo explicabo ipsum ratione
+                necessitatibus! Reiciendis nam aliquid velit rem aut aspernatur nemo itaque quis, doloribus dolore quas
+                consectetur facere ratione repellendus illum reprehenderit. Ullam quae placeat aliquid cum ducimus
+                nesciunt necessitatibus fugit dolores, minus ratione, quibusdam eveniet enim ipsam quasi ab porro illo
+                voluptates quaerat dolor iure consequuntur a! Ratione voluptatum aperiam cum, consequuntur</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facilis quibusdam perspiciatis quis rerum
+                reprehenderit, enim error eum asperiores minima corporis. Modi quas natus quidem eveniet ipsa labore
+                earum enim, officia optio exercitationem iusto, praesentium commodi illo explicabo ipsum ratione
+                necessitatibus! Reiciendis nam aliquid velit rem aut aspernatur nemo itaque quis, doloribus dolore quas
+                consectetur facere ratione repellendus illum reprehenderit. Ullam quae placeat aliquid cum ducimus
+                nesciunt necessitatibus fugit dolores, minus ratione, quibusdam eveniet enim ipsam quasi, eos quasi
+                excepturi explicabo porro aspernatur modi distinctio provident!</p>
+        </div>
+    </section>
+
+    <script src="./dist/js/darkmode-js.min.js"></script>
+    <script>
+        var options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff', // default: '#fff'
+            buttonColorDark: '#100f2c', // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+</body>
+
+</html>
